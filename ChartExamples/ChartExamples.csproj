@@ -79,6 +79,9 @@
     <Compile Include="Charts\FastLine\FastLineChartType.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Charts\UsingMarkers\UsingMarkers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="data\data.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -104,6 +107,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Charts\FastLine\FastLineChartType.resx">
       <DependentUpon>FastLineChartType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Charts\UsingMarkers\UsingMarkers.resx">
+      <DependentUpon>UsingMarkers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -167,11 +173,17 @@
     <Content Include="Charts\FastLine\cscode.txt" />
     <Content Include="Charts\FastLine\sampleConfig.xml" />
     <Content Include="Charts\FastLine\vbcode.txt" />
+    <Content Include="Charts\UsingMarkers\cscode.txt" />
+    <Content Include="Charts\UsingMarkers\sampleConfig.xml" />
+    <Content Include="Charts\UsingMarkers\vbcode.txt" />
     <Content Include="data\chartdata.mdb">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="data\data.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Face.bmp">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -224,7 +224,7 @@ namespace WinFormsChartSamples
             // Access database
             //System.Windows.Forms.DataVisualization.Charting.Utilities.SampleMain.MainForm mainForm = (System.Windows.Forms.DataVisualization.Charting.Utilities.SampleMain.MainForm)this.ParentForm;
 
-            string fileNameString = "c:\\data\\ExcelData.xls";
+            string fileNameString = Path.Combine(Directory.GetCurrentDirectory(), "data", "ExcelData.xls");
             string sConn = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + fileNameString + ";Extended Properties=\"Excel 12.0;HDR=YES\"";
             var myConnection = new OleDbConnection(sConn);
             myConnection.Open();
