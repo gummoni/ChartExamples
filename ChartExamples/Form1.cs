@@ -16,5 +16,10 @@ namespace ChartExamples
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            fastLineChartType1.SampleDataAdd();
+        }
     }
 }
