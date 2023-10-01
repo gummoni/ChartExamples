@@ -21,5 +21,20 @@ namespace ChartExamples
         {
             fastLineChartType1.SampleDataAdd();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            fastLineChartType1.Clear();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            descriptiveStatistics1.SampleDataAdd();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            descriptiveStatistics1.Clear();
+        }
     }
 }
