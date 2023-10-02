@@ -139,6 +139,17 @@ namespace WinFormsChartSamples
 		}
         #endregion
 
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+
+            var axisX = chart1.ChartAreas[0].AxisX;
+            axisX.IntervalType = DateTimeIntervalType.Seconds;
+            axisX.Minimum = 0;
+            axisX.Interval = 1;                     //1秒ごとに表示
+            axisX.LabelStyle.Format = "HH:mm:ss";   //表記フォーマット
+        }
+
         /// <summary>
         /// チャートタイプ変更
         /// </summary>
